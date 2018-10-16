@@ -100,3 +100,13 @@ figcaption {
   width: 400px;
   margin-right: 2rem;
 }
+
+.section-6 {
+  background: #eee;
+}
+
+.section-6 img {
+  width: 400px;
+  height: auto;
+  border: none;
+}
