@@ -83,33 +83,51 @@ font-family: 'Nunito Sans', sans-serif;
   margin-right: 3rem;
 }
 
+.about {
+  margin-top: 15rem;
+  padding: 6rem;
+  position: relative;
+}
+
 .about-heading {
-  margin: 8rem 0 2rem 7rem
+  font-size: 7rem;
+  margin: 8rem 0 2rem 7rem;
+  position: absolute;
+  top: -9%;
+  z-index: 5;
+  
 }
 
 .about-content {
-  width: 90vw;
+  width: 70vw;
   background: #F3F3F3;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 6rem;
+  align-items: flex-start;
+  padding: 8rem 20rem 15rem 2rem;
+  margin-bottom: 15rem;
+  position: relative;
 }
 
 .about-content p {
   font-weight: 200;
-  font-size: 2.3rem;
+  font-size: 1.8rem;
   line-height: 3rem;
   padding: 0 4rem;
 }
 
-.about-img {
-  border-left: 5px solid white;
+.about-img-1 {
+  position: absolute;
+  right: -10rem;
+  height: 25rem;
 }
 
-.about-img img {
-  width: 35rem;
-  height: 32rem;
+.about-img-2 {
+  position: absolute;
+  top: 30rem;
+  right: 2rem;
+  height: 30rem;
+  border: 8px solid #888;
 }
 
 .work {
