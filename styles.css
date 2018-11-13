@@ -93,9 +93,10 @@ font-family: 'Nunito Sans', sans-serif;
   font-size: 7rem;
   margin: 8rem 0 2rem 7rem;
   position: absolute;
-  top: -9%;
+  top: -11%;
   z-index: 5;
-  
+  border-left: 8px solid #F94D4E;
+  padding-left: 1rem;
 }
 
 .about-content {
@@ -104,7 +105,7 @@ font-family: 'Nunito Sans', sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 8rem 20rem 15rem 2rem;
+  padding: 8rem 20rem 8rem 2rem;
   margin-bottom: 15rem;
   position: relative;
 }
@@ -116,28 +117,150 @@ font-family: 'Nunito Sans', sans-serif;
   padding: 0 4rem;
 }
 
-.about-img-1 {
-  position: absolute;
-  right: -10rem;
-  height: 25rem;
-}
-
 .about-img-2 {
   position: absolute;
-  top: 33rem;
-  right: 2rem;
+  right: -10rem;
+  top: -5rem;
   height: 30rem;
-  border: 8px solid #888;
+  padding: 1rem;
+  border: 1.4rem solid #626262;
 }
 
+.work {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+
+}
+
+.sidebar {
+  position: relative;
+}
+
+.sidebar h2 {
+  border-left: 8px solid #F94D4E;
+  padding-left: 1rem;
+  font-size: 8rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 200;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 10rem;
+  left: -8rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 3rem;
+}
+
+.article {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  position: relative;
+  margin-top: 10rem;
+}
+
+.article-1-box {
+  background: #505050;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  padding: 8rem 7rem 9rem 15rem;
+}
+
+.article-1-box h3 {
+  font-size: 6rem
+}
+
+.article-1 img {
+  width: 38rem;
+  position: absolute;
+  left: -28rem;
+  top: -5rem;
+  border: 15px solid #a3a3a3;
+  padding: 10px;
+}
+
+.content a {
+  color: white;
+  font-weight: 200;
+  font-size: 1.5rem;
+  transition: .3s;
+}
+
+.article-2 {
+  align-self: flex-start;
+}
+
+.article-2 img {
+  width: 38rem;
+  position: absolute;
+  right: -27rem;
+  top: 3rem;
+  border: 15px solid #a3a3a3;
+  padding: 10px;
+}
+
+.article-2-box {
+  background: #505050;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  padding: 8rem 15rem 9rem 7rem;
+}
+
+.article-2-box h3 {
+  font-size: 6rem
+}
+
+.article-3 {
+  align-self: center;
+  margin: 12rem;
+}
+
+.article-3 img {
+  width: 40rem;
+  position: absolute;
+  left: -28rem;
+  top: 5rem;
+  border: 15px solid #a3a3a3;
+  padding: 10px;
+}
+
+.article-3-box {
+  background: #505050;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  padding: 8rem 7rem 9rem 17rem;
+}
+
+.article-3-box h3 {
+  font-size: 6rem
+}
+
+/*
 .work {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  position: relative;
 }
 
 .work-heading {
-  margin: 4rem 0 3rem 7rem
+  margin: 4rem 0 0 7rem;
+  border-left: 8px solid red;
+  padding-left: 1rem;
+  font-size: 7rem;
+  transform: rotate(90deg);
+  position: absolute;
+  left: 0;
 }
 
 .work-article {
@@ -172,7 +295,12 @@ font-family: 'Nunito Sans', sans-serif;
 
 .article-1 {
   background: #3DAEC6;
-  width: 96vw;
+  width: 60vw;
+}
+
+.article-1-heading {
+  font-size: 6rem;
+  padding: 0;
 }
 
 .article-1-img {
@@ -208,30 +336,35 @@ font-family: 'Nunito Sans', sans-serif;
   padding: 5rem 0;
   width: 45rem;
   height: 42rem;
-}
+} */
 
 .footer {
-  background: #d8d8d8;
+  background: #303030;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 5rem;
   margin-top: 2.5rem;
+  color: #dedede;
 }
 
 .footer-logo img {
-  height: 8rem;
+  height: 10rem;
   margin: 3rem 0 0 3.5rem;
+  filter: invert(1) saturate(1) hue-rotate(360deg);
 }
 
 .contact {
   margin-right: 8rem;
   display: flex;
   align-items: flex-start;
+
 }
 
 .contact-heading {
-  color: black;
+  color: #dedede;
+  border-left: 8px solid #F94D4E;
+  padding-left: 1rem;
 }
 
 .contact-text {
@@ -239,14 +372,14 @@ font-family: 'Nunito Sans', sans-serif;
 }
 
 .contact-link {
-  color: black;
+  color: #dedede;
   text-decoration: none;
   font-size: 1.6rem;
   transition: .3s;
 }
 
 .contact-link:hover {
-  color: #53965A;
+  color: #2da56d;
   text-decoration: underline;
   font-size: 1.7rem;
 }
