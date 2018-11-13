@@ -53,6 +53,24 @@
   margin-right: 6rem;
 }
 
+.split-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.split-list ul {
+  list-style: none;
+  margin-top: 2rem;
+}
+
+.split-list li {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  padding: 10px 0;
+}
+
 .section-1 {
   margin-bottom: 6rem
 }
@@ -103,6 +121,8 @@ figcaption {
 
 .section-6 {
   background: #eee;
+  padding-left: 20rem;
+  padding-right: 20rem;
 }
 
 .section-6 img {
@@ -115,7 +135,7 @@ figcaption {
 .how {
   margin: 10rem 3rem 5rem 0;
   width: 75%;
-  background: #51c2df;
+  background: #595959;
   padding: 5rem;
 }
 
