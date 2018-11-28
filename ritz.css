@@ -144,6 +144,13 @@
   border: 5px solid #999;
 }
 
+.section-proto-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 .section-7 {
   background: #dadada;
   display: flex;
