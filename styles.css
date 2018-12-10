@@ -95,12 +95,12 @@ font-family: 'Nunito Sans', sans-serif;
   position: absolute;
   top: -11%;
   z-index: 5;
-  border-left: 8px solid #F94D4E;
+  border-left: .75rem solid #F94D4E;
   padding-left: 1rem;
 }
 
 .about-content {
-  width: 70vw;
+  width: 80vw;
   background: #F3F3F3;
   display: flex;
   justify-content: space-between;
@@ -137,7 +137,7 @@ font-family: 'Nunito Sans', sans-serif;
 }
 
 .sidebar h2 {
-  border-left: 8px solid #F94D4E;
+  border-left: .75rem solid #F94D4E;
   padding-left: 1rem;
   font-size: 8rem;
   font-family: 'Nunito Sans', sans-serif;
@@ -205,7 +205,7 @@ font-family: 'Nunito Sans', sans-serif;
 
 .contact-heading {
   color: #dedede;
-  border-left: 8px solid #F94D4E;
+  border-left: .75rem solid #F94D4E;
   padding-left: 1rem;
 }
 
@@ -238,50 +238,324 @@ font-family: 'Nunito Sans', sans-serif;
   width: 70%;
 }
 
-@media (min-width: 350px) {
+@media (max-width: 2200px) {
   html {
-    font-size: 4px;
+    font-size: 15px;
   }
 }
 
-@media (min-width: 500px) {
+@media (max-width: 1900px) {
   html {
-    font-size: 6px;
+    font-size: 15px;
   }
 }
 
-@media (min-width: 900px) {
-  html {
-    font-size: 7px;
-  }
-}
-
-@media (min-width: 1100px) {
-  html {
-    font-size: 10px;
-  }
-}
-
-@media (min-width: 1400px) {
-  html {
-    font-size: 11px;
-  }
-}
-
-@media (min-width: 1600px) {
+@media (max-width: 1600px) {
   html {
     font-size: 13px;
   }
 }
 
-@media (min-width: 1900px) {
+@media (max-width: 1400px) {
   html {
-    font-size: 15px;
+    font-size: 11px;
   }
 }
 
-@media (min-width: 2200px) {
+@media (max-width: 1100px) {
   html {
-    font-size: 15px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 7px;
+  }
+
+  .about-content p {
+    font-weight: 200;
+    font-size: 3.2rem;
+    line-height: 4rem;
+    padding: 0 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    margin-top: 20rem;
+    padding: 4rem;
+    position: relative;
+  }
+
+  .about-heading {
+    font-size: 7rem;
+    margin: 8rem 0 2rem 7rem;
+    position: absolute;
+    top: -11%;
+    z-index: 5;
+    border-left: .75rem solid #F94D4E;
+    padding-left: 1rem;
+  }
+
+  .about-content {
+    width: 80vw;
+    background: #F3F3F3;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 8rem 9rem 8rem 2rem;
+    margin-bottom: 15rem;
+    position: relative;
+  }
+
+  .about-content p {
+    font-weight: 200;
+    font-size: 3rem;
+    line-height: 4rem;
+    padding: 0 4rem;
+  }
+
+  .about-img-2 {
+    position: absolute;
+    right: -12rem;
+    top: -10rem;
+    height: 30rem;
+    padding: 1rem;
+    border: 0px solid #626262;
+  }
+
+  .article-content {
+    padding: 0 8rem;
+  }
+
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 6px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: 88%;
+    background: #F94D4E;
+  }
+
+  .header-h1 {
+    text-align: right;
+    align-self: center;
+    width: 80%;
+    color: #fff;
+    margin-right: 3rem;
+  }
+
+  .about {
+    margin-top: 20rem;
+    padding: 4rem;
+    position: relative;
+  }
+
+  .about-heading {
+    font-size: 7rem;
+    margin: 8rem 0 2rem 7rem;
+    position: absolute;
+    top: -11%;
+    z-index: 5;
+    border-left: .75rem solid #F94D4E;
+    padding-left: 1rem;
+  }
+
+  .about-content {
+    width: 80vw;
+    background: #F3F3F3;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 8rem 9rem 8rem 2rem;
+    margin-bottom: 15rem;
+    position: relative;
+  }
+
+  .about-content p {
+    font-weight: 200;
+    font-size: 3rem;
+    line-height: 4rem;
+    padding: 0 4rem;
+  }
+
+  .about-img-2 {
+    position: absolute;
+    right: -12rem;
+    top: -18rem;
+    height: 30rem;
+    padding: 1rem;
+    border: 0px solid #626262;
+  }
+
+  .work {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: relative;
+    margin-bottom: 4rem;
+  }
+
+  .sidebar h2 {
+    border-left: .75rem solid #F94D4E;
+    padding-left: 1rem;
+    transform: rotate(0deg);
+    position: absolute;
+    top: -8rem;
+    left: 3rem;
+  }
+
+  .content {
+    align-items: center;
+  }
+
+  .article-content {
+    padding: 7rem;
+  }
+
+  .article-content h3 {
+    font-size: 4rem;
+  }
+
+  .footer {
+    padding: 4rem;
+    margin-top: 2rem;
+  }
+
+  .footer-logo img {
+    height: 10rem;
+    margin: 3rem 0 0 3.5rem;
+    filter: invert(1) saturate(1) hue-rotate(360deg);
+  }
+
+  .contact {
+    margin-right: 0;
+    display: flex;
+    align-items: flex-start;
+
+  }
+
+  .contact-heading {
+    color: #dedede;
+    border-left: .75rem solid #F94D4E;
+    padding-left: 1rem;
+  }
+
+  .contact-text {
+    font-size: 1.6rem;
+  }
+
+  .contact-link {
+    color: #dedede;
+    text-decoration: none;
+    font-size: 1.6rem;
+    transition: .3s;
+  }
+
+  .contact-link:hover {
+    color: #2da56d;
+    text-decoration: underline;
+  }
+
+  .social-links p {
+    margin: 2rem 2rem;
+    font-size: 1.8rem;
+  }
+
+  .social-links p:first-of-type {
+    margin-top: 1.5rem;
+  }
+
+  .p {
+    width: 70%;
+  }
+
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 4px;
+  }
+
+  .about {
+    margin-top: 15rem;
+    padding: 6rem;
+    position: relative;
+  }
+
+  .about-heading {
+    font-size: 7rem;
+    margin: 8rem 0 2rem 7rem;
+    position: absolute;
+    top: -11%;
+    z-index: 5;
+    border-left: .75rem solid #F94D4E;
+    padding-left: 1rem;
+  }
+
+  .about-content {
+    width: 80vw;
+    background: #F3F3F3;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 8rem 10rem 8rem 2rem;
+    margin-bottom: 15rem;
+    position: relative;
+  }
+
+  .about-content p {
+    font-weight: 200;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    padding: 0 4rem;
+  }
+
+  .about-img-2 {
+    position: absolute;
+    right: -14rem;
+    top: -5rem;
+    height: 30rem;
+    padding: 1rem;
+    border: 0px solid #626262;
+  }
+
+  .work {
+    display: grid;
+    grid-template-columns: 1fr;
+
+  }
+
+  .sidebar {
+    position: relative;
+    margin-bottom: 4rem;
+  }
+
+  .sidebar h2 {
+    border-left: .75rem solid #F94D4E;
+    padding-left: 1rem;
+    transform: rotate(0deg);
+    position: absolute;
+    top: -8rem;
+    left: 3rem;
+
+  }
+
+  .content {
+    align-items: center;
+  }
+
+  .article-content h3 {
+    font-size: 5.25rem;
   }
 }
